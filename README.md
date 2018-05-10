@@ -31,7 +31,13 @@ Install dependencies:
 
 This will put a static version of the site in `out/`.
 
+## Running with Cubicle Backend:
+
+Run `yarn dev` to host static files on localhost:3000. Then run Cubicle on localhost:8080. For expedited development, 1. we hardcoded snowflake to make requests to localhost:8080, and 2. we made a change to Cubicle to accept requests from any origin. This is hacky and we should fix this issue.
+
 ## Future work
 
 * Load initial data from a file, to improve flexibility.
 * Add restricted job title selection and validation.
+* Consider moving this tool to Cubicle completely - see the `Running with Cubicle Backend` section.
+
